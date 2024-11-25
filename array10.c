@@ -1,3 +1,4 @@
+/*find the duplicate elements from the given array*/
 #include<stdio.h>
 	int main()
 	{
