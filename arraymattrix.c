@@ -32,9 +32,27 @@ int main()
     {
         for(j=0;j<n;j++)
         {
-            printf("%d",c[i][j]);
+            printf("%d\t",c[i][j]);
         }
         printf("\n");
     }
-    
+    int m[n][n];
+    for(i=0;i<n;i++)
+    { 
+        for(j=0;j<n;j++)
+        {  m[i][j]=0;
+           for(int s=0;s<n;s++)
+            m[i][j]=m[i][j] + a[i][s]*b[s][j];
+        }
+    }
+    printf("multiplication mattrix\n");
+    for(i=0;i<n;i++)
+   {
+    for(j=0;j<n;j++)
+    {
+    printf("%d\t",m[i][j]);
+    }
+    printf("\n");
+   }
+ return 0;
 }
